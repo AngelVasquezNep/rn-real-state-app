@@ -180,7 +180,7 @@ export const states = [
     address: 'México',
     id: '15',
     locationType: 'state',
-    image: require('assets/images/states/Mexico.jpg')
+    image: require('assets/images/states/Mexico.jpeg')
   },
   {
     name: 'Hidalgo',

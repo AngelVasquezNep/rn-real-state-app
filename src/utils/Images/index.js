@@ -18,8 +18,8 @@ const defaultCovers = [
 ]
 
 export const getImageCover = (props = {}) => {
-  // temporal solution, there is a problem with external images in emulator device
-  return defaultCovers[parseInt(Math.random() * 7)]
+  // temporal solution for not loaded images, there is a problem with external images in emulator device
+  // return defaultCovers[parseInt(Math.random() * 7)]
 
   const { image } = props
   const cover = typeof image === 'string' ? { uri: image } : image

@@ -1,6 +1,5 @@
 import React from 'react'
-import { View, TouchableOpacity, Image } from 'react-native'
-import { Text } from 'react-native-elements'
+import { View, Text, TouchableOpacity, Image } from 'react-native'
 
 import { OPERATION_TYPES_BIBLIO, PROPERTY_TYPES_BIBLIO } from 'services/seo'
 import { getImageCover, splitText } from 'utils'

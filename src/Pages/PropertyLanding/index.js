@@ -67,11 +67,16 @@ const PropertyLanding = ({ navigation }) => {
         <Modal visible animationType="slide">
           <View style={{ flex: 1 }}>
             <Image
-              style={{ width: '100%', height: '100%', resizeMode: 'contain' }}
+              style={styles.imageModal}
               source={getImageCover({ image: selectedImage })}
             />
           </View>
-          <Button onPress={() => setSelectedImage(null)} title="Cerrar" />
+          <View style={styles.closeButton}>
+            <Button
+              title="Cerrar"
+              onPress={() => setSelectedImage(null)}
+            />
+          </View>
         </Modal>
       )}
 

@@ -1,14 +1,13 @@
 import React from 'react'
-import { View, StyleSheet, TouchableHighlight } from 'react-native'
-import { Text } from 'react-native-elements'
+import { View, Text, StyleSheet, TouchableHighlight } from 'react-native'
 
-import { colors } from 'theme'
+import { fontSizes, colors } from 'theme'
 
 const BaseHeader = ({ title = 'Title', link = 'link', onPress = () => {} }) => {
   const [active, setActive] = React.useState(false)
   return (
     <View style={styles.wrapper}>
-      <Text h4 style={styles.title}>
+      <Text style={styles.title}>
         {title}
       </Text>
       <TouchableHighlight
@@ -16,7 +15,7 @@ const BaseHeader = ({ title = 'Title', link = 'link', onPress = () => {} }) => {
         onPress={() => setActive(!active)}
         hitSlop={{ top: 30, left: 30, bottom: 30, right: 30 }}
       >
-        <Text h5 style={styles.action}>
+        <Text style={styles.action}>
           {link}
         </Text>
       </TouchableHighlight>
@@ -37,7 +36,9 @@ const styles = StyleSheet.create({
   },
   title: {
     maxWidth: '80%',
-    color: colors.text
+    color: colors.text,
+    fontSize: fontSizes.h2,
+    fontWeight: 'bold',
   },
   action: {
     color: 'gray',

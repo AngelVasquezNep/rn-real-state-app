@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native'
 import { getDeviceDimensions } from 'utils'
 
-import { colors } from 'theme'
+import { colors, fontSizes } from 'theme'
 
 const styles = StyleSheet.create({
   container: {
@@ -28,10 +28,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderRadius: 10,
     borderWidth: 1,
+    borderColor: 'transparent'
   },
   title: {
     textAlign: 'center',
-    color: colors.white
+    color: colors.white,
+    fontSize: fontSizes.h1,
+    fontWeight: 'bold',
+    letterSpacing: 1.5,
   }
 })
 

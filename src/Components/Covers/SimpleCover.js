@@ -1,27 +1,22 @@
 import React from 'react'
-import { View, Image, StyleSheet } from 'react-native'
-import { Text, Icon } from 'react-native-elements'
+import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native'
 
-import { colors } from 'theme'
+import { colors, fontSizes } from 'theme'
 import { getImageCover } from 'src/utils/Images'
 
-const Cover = ({
-  title,
-  subtitle,
-  image,
-  iconName = 'arrow-back',
-  sizeIcon = 30,
-  handleBack = () => {}
-}) => {
+const Cover = ({ title, subtitle, image, handleBack = () => {} }) => {
   return (
     <View style={styles.container}>
       <View style={styles.icon}>
-        <Icon
+        <TouchableOpacity
+          hitSlop={{ top: 30, bottom: 30, left: 30, right: 30 }}
           onPress={handleBack}
-          size={sizeIcon}
-          name={iconName}
-          color="white"
-        />
+        >
+          <Image
+            style={styles.iconImage}
+            source={require('assets/images/icons/left-arrow.png')}
+          />
+        </TouchableOpacity>
       </View>
       {/* <Image source={getImageCover({ image })} style={styles.image} /> */}
       <Image source={image} style={styles.image} />
@@ -37,7 +32,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     position: 'relative',
-    backgroundColor: 'rgba(0, 0, 0, 0.2)',
+    backgroundColor: 'rgba(0, 0, 0, 0.2)'
   },
   image: {
     height: 300,
@@ -49,6 +44,11 @@ const styles = StyleSheet.create({
     left: 10,
     zIndex: 2
   },
+  iconImage: {
+    zIndex: 2,
+    width: 25,
+    height: 25
+  },
   wrapperTitle: {
     position: 'absolute',
     top: 0,
@@ -58,17 +58,16 @@ const styles = StyleSheet.create({
     paddingBottom: 15,
     paddingHorizontal: 15,
     justifyContent: 'flex-end',
-    backgroundColor: 'rgba(0, 0, 0, 0.25)',
+    backgroundColor: 'rgba(0, 0, 0, 0.25)'
   },
   title: {
     color: colors.white,
-    fontSize: 50,
-    fontWeight: '100'
+    fontSize: fontSizes.h1 * 1.4
   },
   subtitle: {
-    fontSize: 25,
+    fontSize: fontSizes.h4,
     color: colors.white
-  },
+  }
 })
 
 export default Cover

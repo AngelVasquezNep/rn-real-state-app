@@ -44,6 +44,14 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     width: '100%',
     height: '100%'
+  },
+  imageModal: {
+    width: '100%',
+    height: '100%',
+    resizeMode: 'contain'
+  },
+  closeButton: {
+    marginBottom: 20
   }
 })
 

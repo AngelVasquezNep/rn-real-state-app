@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native'
 import { getDeviceDimensions } from 'utils'
-import { colors } from 'theme'
+import { fontSizes, colors } from 'theme'
 
 const styles = StyleSheet.create({
   cardContainer: {
@@ -16,7 +16,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
     flex: 1,
     zIndex: 10,
-    // borderWidth: 1,
     borderRadius: 20,
     position: 'relative',
 
@@ -43,7 +42,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between'
   },
   title: {
-    fontSize: 20,
+    fontSize: fontSizes.h5,
     fontWeight: 'normal',
     paddingVertical: 0,
     marginVertical: 0
@@ -66,7 +65,7 @@ const styles = StyleSheet.create({
   },
   price: {
     color: colors.white,
-    fontSize: 16,
+    fontSize: fontSizes.p,
     fontWeight: 'bold'
   },
   wrapperTag: {

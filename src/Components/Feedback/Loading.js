@@ -3,9 +3,9 @@ import { View, ActivityIndicator, StyleSheet } from 'react-native'
 
 import { colors } from 'theme'
 
-const Loading = ({ size, color }) => {
+const Loading = ({ size = 'large', color, style = {} }) => {
   return (
-    <View style={styles.loadingContainer}>
+    <View style={[styles.loadingContainer, style]}>
       <ActivityIndicator size={size} color={color || colors.secondary} />
     </View>
   )

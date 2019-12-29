@@ -2,9 +2,9 @@ import React from 'react'
 import { View, Text, TouchableOpacity, Image } from 'react-native'
 
 import { OPERATION_TYPES_BIBLIO, PROPERTY_TYPES_BIBLIO } from 'services/seo'
-import { getImageCover, splitText } from 'utils'
+import { splitText } from 'utils'
 
-import { Tag } from 'components'
+import { Tag, ImageLoading } from 'components'
 
 import styles from './styles'
 
@@ -16,7 +16,7 @@ const PropertyCard = ({ property = {}, handlePress = property => {} }) => {
     <TouchableOpacity activeOpacity={0.5} onPress={() => handlePress(property)}>
       <View style={styles.cardContainer}>
         <View style={styles.cardImageContainer}>
-          <Image source={getImageCover({ image })} style={styles.cardImage} />
+          <ImageLoading image={image} style={styles.cardImage} />
         </View>
 
         <View style={styles.cardContentContainer}>

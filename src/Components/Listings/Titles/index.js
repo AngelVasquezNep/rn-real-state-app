@@ -1,6 +1,6 @@
 import React from 'react'
-import { View, Text, Image, TouchableHighlight } from 'react-native'
-import { Categories } from 'components'
+import { View, Text, TouchableHighlight } from 'react-native'
+import { Categories, ImageLoading } from 'components'
 import { colors } from 'theme'
 import styles from './styles'
 
@@ -17,7 +17,7 @@ const Titles = ({ title, link, data, titleStyles, handlePress = () => {} }) => {
           style={{ borderRadius: 10 }}
         >
           <View style={styles.container}>
-            <Image source={item.image} style={styles.imageBackground} />
+            <ImageLoading source={item.image} style={styles.imageBackground} />
             <Text style={[styles.title, titleStyles]}>
               {item.title}
             </Text>

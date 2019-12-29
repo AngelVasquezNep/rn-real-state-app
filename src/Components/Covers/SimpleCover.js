@@ -1,6 +1,7 @@
 import React from 'react'
-import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native'
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
 
+import { ImageLoading } from 'components'
 import { colors, fontSizes } from 'theme'
 import { getImageCover } from 'src/utils/Images'
 
@@ -12,14 +13,14 @@ const Cover = ({ title, subtitle, image, handleBack = () => {} }) => {
           hitSlop={{ top: 30, bottom: 30, left: 30, right: 30 }}
           onPress={handleBack}
         >
-          <Image
+          <ImageLoading
             style={styles.iconImage}
             source={require('assets/images/icons/left-arrow.png')}
           />
         </TouchableOpacity>
       </View>
       {/* <Image source={getImageCover({ image })} style={styles.image} /> */}
-      <Image source={image} style={styles.image} />
+      <ImageLoading source={image} style={styles.image} />
       <View style={styles.wrapperTitle}>
         <Text style={styles.title}>{title}</Text>
         <Text style={styles.subtitle}>{subtitle}</Text>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 import Loading from './Loading'
+import ImageLoading from './ImageLoading'
 
 const Feedback = ({
   loadingSize = 'large',
@@ -26,5 +27,5 @@ const Feedback = ({
   return null
 }
 
-export { Loading }
+export { Loading, ImageLoading }
 export default Feedback

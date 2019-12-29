@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text, FlatList, Image, Modal, Button, TouchableOpacity } from 'react-native'
 
 import { OPERATION_TYPES_BIBLIO, PROPERTY_TYPES_BIBLIO } from 'services/seo'
-import { SimpleCover, Tag } from 'components'
+import { SimpleCover, Tag, ImageLoading } from 'components'
 import { getImageCover, splitText } from 'utils'
 
 import styles from './styles'
@@ -66,9 +66,9 @@ const PropertyLanding = ({ navigation }) => {
       {selectedImage && (
         <Modal visible animationType="slide">
           <View style={{ flex: 1 }}>
-            <Image
+            <ImageLoading
               style={styles.imageModal}
-              source={getImageCover({ image: selectedImage })}
+              image={selectedImage}
             />
           </View>
           <View style={styles.closeButton}>
@@ -88,8 +88,8 @@ const PropertyLanding = ({ navigation }) => {
         renderItem={({ item, index }) => (
           <TouchableOpacity onPress={() => setSelectedImage(item.url)}>
             <View style={styles.imageCarouselContainer}>
-              <Image
-                source={getImageCover({ image: item.url })}
+              <ImageLoading
+                image={item.url}
                 style={styles.imageCarousel}
               />
             </View>

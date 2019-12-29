@@ -1,7 +1,7 @@
 import { PropertyCard } from './Cards'
 import { SimpleCover } from './Covers'
 import { CatchRenderError } from './Errors'
-import Feedback, { Loading } from './Feedback'
+import Feedback, { Loading, ImageLoading } from './Feedback'
 import { HeaderWithSearch } from './Header'
 import { WrapperApp } from './Layouts'
 import { BaseHeader, Categories, Titles } from './Listings'
@@ -11,6 +11,7 @@ export {
   PropertyCard,
   Feedback,
   Loading,
+  ImageLoading,
   SimpleCover,
   CatchRenderError,
   HeaderWithSearch,

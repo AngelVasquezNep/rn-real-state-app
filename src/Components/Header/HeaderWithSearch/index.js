@@ -1,4 +1,5 @@
 import React from 'react'
+import { COMPANY_NAME } from 'react-native-dotenv'
 import { View, Text, StyleSheet } from 'react-native'
 
 import { colors, fontSizes } from 'theme'
@@ -8,7 +9,7 @@ const HeaderWithSearch = () => {
     <View style={styles.wrapper}>
       <View style={[styles.flex, styles.titleContainer]}>
         <Text style={styles.title}>
-          Neximo
+          {COMPANY_NAME}
         </Text>
       </View>
     </View>

@@ -43,3 +43,13 @@ iOS
 ```
 react-native run-ios
 ```
+
+### Envs
+
+`COMPANY_NAME`: Company name
+`API_BASE_URL`: Api base url without final "/"
+
+Paths to join with `API_BASE_URL`
+
+`PATH_LANDING_PAGE`:  To get landing highlights
+`PATH_SEARCH_PROPERTIES`: To get specific property query

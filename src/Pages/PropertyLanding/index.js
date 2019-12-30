@@ -83,7 +83,6 @@ const PropertyLanding = ({ navigation }) => {
       <FlatList
         horizontal
         keyExtractor={(item, index) => String(index)}
-        data={new Array(7).fill({})}
         data={imagesJson}
         renderItem={({ item, index }) => (
           <TouchableOpacity onPress={() => setSelectedImage(item.url)}>

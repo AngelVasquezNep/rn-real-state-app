@@ -1,11 +1,34 @@
 # An App builded with React Native
 
-It includes some nice features like Hooks, multiple routes, touche handles, image loading, and more.
+It's a personal project to practice new knowledge and skills.
 
-## Stack
+It includes some nice features like hooks, multiple routes, touche handles, image loading, and more.
 
-- react-native
-- react-navigation
+Note:I used *React Native CLI Quickstart*.
+
+### Run
+
+**Android**
+
+```
+react-native run-android
+```
+
+**iOS**
+
+```
+react-native run-ios
+```
+
+### Envs
+
+- `COMPANY_NAME`: Company name
+- `API_BASE_URL`: Api base url without final "/"
+
+Paths to join with `API_BASE_URL`
+
+- `PATH_LANDING_PAGE`:  To get landing highlights
+- `PATH_SEARCH_PROPERTIES`: To get specific property query
 
 ---
 
@@ -30,26 +53,3 @@ It includes some nice features like Hooks, multiple routes, touche handles, imag
 ![rn-android-6](https://raw.githubusercontent.com/AngelVasquezNep/rn-real-state-app/master/snapshots/rn-android-6.jpg)
 ![rn-android-7](https://raw.githubusercontent.com/AngelVasquezNep/rn-real-state-app/master/snapshots/rn-android-7.jpg)
 ![rn-android-8](https://raw.githubusercontent.com/AngelVasquezNep/rn-real-state-app/master/snapshots/rn-android-8.jpg)
-![rn-android-9](https://raw.githubusercontent.com/AngelVasquezNep/rn-real-state-app/master/snapshots/rn-android-9.jpg)
-
-### Run
-
-Android
-```
-react-native run-android
-```
-
-iOS
-```
-react-native run-ios
-```
-
-### Envs
-
-`COMPANY_NAME`: Company name
-`API_BASE_URL`: Api base url without final "/"
-
-Paths to join with `API_BASE_URL`
-
-`PATH_LANDING_PAGE`:  To get landing highlights
-`PATH_SEARCH_PROPERTIES`: To get specific property query

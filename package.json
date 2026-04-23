@@ -1,5 +1,5 @@
 {
-  "name": "neximo_react_native",
+  "name": "realstate_react_native",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,26 +10,10 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "react": "19.2.4",
-    "react-native": "0.84.1",
-    "react-native-dotenv": "^3.4.11",
-    "react-native-gesture-handler": "^2.30.0",
-    "react-native-reanimated": "^4.2.3",
-    "react-native-screens": "^4.24.0",
-    "react-navigation": "^5.0.0",
-    "react-navigation-stack": "^2.10.4",
-    "react-router-native": "^6.30.3"
+    
   },
   "devDependencies": {
-    "@babel/core": "^7.29.0",
-    "@babel/runtime": "^7.29.2",
-    "@react-native-community/eslint-config": "^3.2.0",
-    "babel-jest": "^30.3.0",
-    "babel-plugin-module-resolver": "^5.0.3",
-    "eslint": "^10.1.0",
-    "jest": "^30.3.0",
-    "metro-react-native-babel-preset": "^0.77.0",
-    "react-test-renderer": "19.2.4"
+    
   },
   "jest": {
     "preset": "react-native"
